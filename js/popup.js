@@ -21,8 +21,9 @@
 
   // 获取页面URL， 初始化 二维码
   sendMessageToContentScript({ cmd:'getHref' }, function (response) {
-    input.value = (response && response.href) || 'http://www.cerien.cn';
-    renderQrcode(input.value);
+    var url = (response && response.href) || 'http://www.cerien.cn';
+    input.value = url;
+    renderQrcode(url);
   });
   
   // 生成新的二维码
