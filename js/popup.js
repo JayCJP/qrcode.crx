@@ -18,11 +18,11 @@
   function renderQrcode (value) {
     new QRCode(qrcodeDOM, value);
   }
-  
+
   // 获取页面URL， 初始化 二维码
   sendMessageToContentScript({ cmd:'getHref' }, function (response) {
     input.value = (response && response.href) || 'http://www.cerien.cn';
-    renderQrcode(response.href);
+    renderQrcode(input.value);
   });
   
   // 生成新的二维码
