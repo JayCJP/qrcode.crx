@@ -1,6 +1,6 @@
 # 这是一个可以生成二维码的插件
 
-![](https://raw.githubusercontent.com/JayCJP/qrcode-crx/master/dist/preview.png)
+![](https://raw.githubusercontent.com/JayCJP/qrcode.crx/master/dist/preview.png)
 
 # 安装
 
